@@ -1,0 +1,54 @@
+@font-face {
+    font-family: WAG;
+    src: url("WAGURI.ttf");
+}
+
+@font-face {
+    font-family: NOTO;
+    src: url("NotoSansKR-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:blueviolet;
+    color:white;
+}
+h1 {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 450px;
+    font-family: WAG;
+    font-weight: normal;
+    font-size: 60px;
+    text-align: right;
+    /*background-color:black;*/
+}
+p {
+    margin-top: 32px;
+}
+
+#box1 {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50%;
+    font-family: NOTO;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+    /*background-color:black;*/
+}
+
+#image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+}
