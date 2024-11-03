@@ -1,5 +1,19 @@
 body{
     margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+.section {
+    height: 100vh; /* 각 섹션의 높이를 화면 전체로 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+}
+
+#section1 {
+    background-color: #1abc9c; /* 첫 번째 섹션 색상 */
 }
 #game_1{
     color: red;
