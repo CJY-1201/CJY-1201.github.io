@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('img_1.jpg');
+    background-image: url(img/img_1.jpg);
 }
 
 h1 {
