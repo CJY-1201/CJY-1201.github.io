@@ -16,7 +16,10 @@ body {
 }
 
 #section1 {
-    background-image: url(img/img_1.jpg);
+    background-image: url(img/img_2.jpg);
+    background-size: cover; /* or contain, depending on your needs */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-position: center; /* centers the image */
 }
 
 h1 {
