@@ -21,10 +21,16 @@ body {
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
 }
-
+#section2 {
+    background-image: url(img/img_2.jpg);
+    background-size: cover; /* or contain, depending on your needs */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-position: center; /* centers the image */
+}
 h1 {
     font-size: 3em;
     margin: 0;
+    
 }
 
 #grid {
