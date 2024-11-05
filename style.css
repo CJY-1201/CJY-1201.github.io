@@ -12,7 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #f0f0f0; /* 배경색 */
+    background-color: none;
+    background-image: url('img_1.jpg');
 }
 
 h1 {
