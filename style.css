@@ -1,9 +1,38 @@
 /* style.css */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+body { 
+  font-family: "Signika Negative", sans-serif; 
+  font-weight: 300;
+  margin: 0;
 }
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    font-size: 10vw;  /* 초기 폰트 크기 */
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: font-size 0.1s ease; /* 부드러운 크기 변화 */
+}
+
+nav {
+    position:sticky;
+    right: 10px;
+    top: 10px;
+  }
 
 .section {
     height: 100vh; /* 각 섹션의 높이를 화면 전체로 설정 */
@@ -12,7 +41,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 2rem;
     background-color: #f0f0f0; /* 배경색 */
+    border-bottom: 1px solid #ccc;
 }
 
 #section1 {
@@ -27,25 +58,18 @@ body {
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
 }
+#section3 {
+    background-image: url(img/img_2.jpg);
+    background-size: cover; /* or contain, depending on your needs */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-position: center; /* centers the image */
+}
 h1 {
     font-size: 3em;
     margin: 0;
-    
+    color: #ccc;
 }
 
-#grid {
-    margin-top: 20px;
-}
-
-#grid ul {
-    list-style: none;
-    padding: 0;
-}
-
-#grid li {
-    display: inline;
-    margin: 0 15px;
-}
 
 #article {
     margin-top: 20px;
