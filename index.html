@@ -6,14 +6,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/Flip.min.js"></script>
     <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="gsap_1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
     <header id="header">
         <a href="index.html" id="logo">
@@ -30,13 +34,21 @@
         </div>
     </header>
     <section class="section" id="section1">
-            <div id="article">
-                <h1>게임 제목</h1>
-                <!-- <p><img src="img/컨셉아트총집본.jpg" width="100%"></p> -->
-            </div>
+        <h1>Loading...</h1>
     </section>
     <section class="section" id="section2">
-        <h1>두번째 페이지</h1>
+        <h1 id="scramble">안녕하세요!</h1>
+    <script>
+        gsap.to("#scramble", {
+            scrambleText: {
+                text: "환영합니다!",
+                chars: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                speed: 0.3,
+                revealDelay: 0.5
+            },
+            duration: 3
+        });
+    </script>
     </section>
     <section class="section" id="section3">
         <h1>세번째 페이지</h1>
