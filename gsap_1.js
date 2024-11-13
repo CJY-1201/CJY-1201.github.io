@@ -1,16 +1,8 @@
 // gsap_1.js
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
-gsap.registerPlugin(ScrambleTextPlugin);
+gsap.registerPlugin(TextPlugin);
 
-window.addEventListener('wheel', function(event) {
-    const logo = document.getElementById('logo');
-    if (event.deltaY > 0) {
-        logo.style.transform = 'scale(1)'; // 스크롤 다운 시 확대
-    } else {
-        logo.style.transform = 'scale(1.5)'; // 스크롤 업 시 원래 크기로
-    }
-});
 
 const lenis = new Lenis({
     duration: 0.1,
@@ -28,12 +20,13 @@ const lenis = new Lenis({
     
     requestAnimationFrame(raf);
 
-gsap.to("scramble", {
-        scrambleText: {
+    document.addEventListener('DOMContentLoaded', function() {
+        gsap.to("#pjlily", {
+            duration: 3.5,
             text: "Project.Lily",
-            chars: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()",
-            speed: 0.25,
-            revealDelay: 0.5
-        },
-        duration: 3
+            color: "#3a0190",
+            ease: "power1.inOut"
+            
+        });
     });
+    

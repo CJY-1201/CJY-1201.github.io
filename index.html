@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <title>Game Project_PPM</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
 </head>
 <body>
-    
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/gsap.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <script src="js/Flip.min.js"></script>
-    <script src="js/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrambleTextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-    <script src="gsap_1.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
+  <script src="gsap_1.js"></script>
     <header id="header">
         <a href="index.html" id="logo">
             <!--img id="logo" src="img/ppm1.png" alt="로고"-->PPM
@@ -26,32 +23,23 @@
         <div id="nav-container">
             <nav>
                 <ul>
-                    <li><a href="#section1" title="게임개요">게임개요</a></li>
-                    <li><a href="#section2" title="세계관">세계관</a></li>
-                    <li><a href="#section3" title="캐릭터 소개">캐릭터 소개</a></li> 
+                    <li><a href="#section1" title="홈">Home</a></li>
+                    <li><a href="#section2" title="게임개요">Game Overview</a></li>
+                    <li><a href="#section3" title="세계관">world view</a></li> 
                 </ul>
             </nav>
         </div>
     </header>
     <section class="section" id="section1">
-        <h1>Loading...</h1>
+        <h1 id="pjlily">Loading...</h1>
     </section>
     <section class="section" id="section2">
-        <h1 id="scramble">안녕하세요!</h1>
-    <script>
-        gsap.to("#scramble", {
-            scrambleText: {
-                text: "환영합니다!",
-                chars: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-                speed: 0.3,
-                revealDelay: 0.5
-            },
-            duration: 3
-        });
-    </script>
+        <h1 id="GameOverview">게임개요</h1>
+        <img src="img/게임게요-이미지.png">
+        
     </section>
     <section class="section" id="section3">
-        <h1>세번째 페이지</h1>
+        <h1 id="worldview">세계관</h1>
     </section>
 </body>
 </html>
