@@ -100,26 +100,34 @@ h1 {
     font-family: "Galmuri11", sans-serif;
     font-weight: bold;
     font-size: 7.5vw;
-    background-image: url(img/background1.png);
-    background-size: cover; /* or contain, depending on your needs */
+    background-image: url(svg/background1.svg);
+    background-size: 1920px 1080px; /* 배경 이미지 크기 설정 */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
 }
 #section2 {
-    background-image: url(img/img_3.jpg);
+    position: relative;
+    background-image: url(svg/background2.svg);
     font-size: 3vw;
-    background-size: cover; /* or contain, depending on your needs */
+    background-size: 1920px 1080px; /* 배경 이미지 크기 설정 */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
 }
 #section3 {
-    background-image: url(img/img_2.jpg);
+    background-image: url(svg/background3.svg);
     font-size: 3vw;
-    background-size: cover; /* or contain, depending on your needs */
+    background-size: 1920px 1080px; /* 배경 이미지 크기 설정 */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
 }
 
 #pjlily {
    color: #ffffff;
+}
+
+#play {
+    position: absolute; /* 또는 fixed */
+    top: 0; /* 상단 */
+    /*left: 0; /* 왼쪽 */
+    right: 1;
 }
