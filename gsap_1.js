@@ -24,7 +24,7 @@ const lenis = new Lenis({
         gsap.to("#pjlily", {
             duration: 3.5,
             text: "Project.Lily",
-            color: "#3a0190",
+            color: "#ffffff",
             ease: "power1.inOut"
             
         });
