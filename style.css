@@ -41,25 +41,6 @@ h1 {
     background-color: #f0f0f0; /* 배경색 */
 }
 
-#section1 {
-    font-family: 'Black Han Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    font-size: 7.5vw;
-    background-image: url(img/img_5.jpg);
-    background-size: 1920px 1080px; /* 배경 이미지 크기 설정 */
-    background-repeat: no-repeat; /* prevents the image from repeating */
-    background-position: center; /* centers the image */
-}
-#section2 {
-    position: relative;
-    background-image: url(img/img_2.jpg);
-    font-size: 3vw;
-    background-size: 1920px 1080px; /* 배경 이미지 크기 설정 */
-    background-repeat: no-repeat; /* prevents the image from repeating */
-    background-position: center; /* centers the image */
-}
 #section3 {
     font-family: "Archivo Black", serif;
     font-weight: 400;
@@ -71,22 +52,3 @@ h1 {
     background-position: center; /* centers the image */
 }
 
-#pjlily {
-    position: absolute; /* 또는 fixed */
-    top: 50%; /* 세로 중앙 */
-    left: 50%; /* 가로 중앙 */
-    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
-    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
-    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
-   color: #3a0190;
-}
-
-#play {
-    position: absolute; /* 또는 fixed */
-    top: 15%; /* 세로 중앙 */
-    left: 50%; /* 가로 중앙 */
-    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
-    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
-    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
-    width: 30%; 
-}

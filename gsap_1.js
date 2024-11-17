@@ -29,4 +29,40 @@ const lenis = new Lenis({
             
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from("#s1_1", {
+            scrollTrigger: {
+                trigger: "#s1_1",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            scale: 0.5,
+            duration: 1,
+        });
+        gsap.from("#s1_2", {
+            scrollTrigger: {
+                trigger: "#s1_2",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            duration: 1,
+        });
+        gsap.from("#s1_3", {
+            scrollTrigger: {
+                trigger: "#s1_3",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            duration: 1,
+        });
+    });
     
