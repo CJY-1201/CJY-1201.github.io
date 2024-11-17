@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Han+Sans&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
 #section1 {
-    font-family: 'Black Han Sans';
-    font-style: normal;
-    font-weight: 400;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
     font-display: swap;
     font-size: 7.5vw;
     background-image: url(img/img_5.jpg);
@@ -12,6 +13,8 @@
 
 #pjlily {
     position: absolute; /* 또는 fixed */
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
     top: 50%; /* 세로 중앙 */
     left: 50%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */

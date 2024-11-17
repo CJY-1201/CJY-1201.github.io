@@ -1,7 +1,7 @@
 /* style.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Han+Sans&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
 body { 
   font-family: "Archivo Black", serif;
   font-weight: 400;
