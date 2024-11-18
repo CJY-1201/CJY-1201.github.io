@@ -64,5 +64,16 @@ const lenis = new Lenis({
             opacity: 0,
             duration: 1,
         });
+        gsap.from("#s2_1", {
+            scrollTrigger: {
+                trigger: "#s2_1",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            scale: 0.5,
+            duration: 1,
+        });
     });
     
