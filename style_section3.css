@@ -1,6 +1,6 @@
 #section3 {
     position: relative;
-    height: 2080px;
+    height: 1800px;
     background-image: url(img/img_6.png);
     font-size: 3vw;
     background-size: 1920px 2140px; /* 배경 이미지 크기 설정 */
@@ -10,7 +10,7 @@
 
 #s2_1 {
     position: absolute; /* 또는 fixed */
-    top: 15%; /* 세로 중앙 */
+    top: 20%; /* 세로 중앙 */
     left: 50%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
@@ -20,7 +20,7 @@
 
 #s2_2 {
     position: absolute; /* 또는 fixed */
-    top: 30%; /* 세로 중앙 */
+    top: 40%; /* 세로 중앙 */
     left: 50%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
@@ -30,7 +30,7 @@
 
 #s2_3 {
     position: absolute; /* 또는 fixed */
-    top: 43%; /* 세로 중앙 */
+    top: 54%; /* 세로 중앙 */
     left: 50%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
@@ -40,7 +40,7 @@
 
 #s2_4 {
     position: absolute; /* 또는 fixed */
-    top: 53%; /* 세로 중앙 */
+    top: 65%; /* 세로 중앙 */
     left: 50%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
@@ -50,7 +50,7 @@
 
 #s2_5 {
     position: absolute; /* 또는 fixed */
-    top: 68%; /* 세로 중앙 */
+    top: 80%; /* 세로 중앙 */
     left: 50%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
