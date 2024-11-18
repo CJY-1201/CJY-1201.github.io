@@ -52,7 +52,7 @@ const lenis = new Lenis({
                 toggleActions: "play none none reverse",
             },
             opacity: 0,
-            duration: 1,
+            duration: 2,
         });
         gsap.from("#s1_3", {
             scrollTrigger: {
@@ -62,7 +62,7 @@ const lenis = new Lenis({
                 toggleActions: "play none none reverse",
             },
             opacity: 0,
-            duration: 1,
+            duration: 2,
         });
         gsap.from("#s2_1", {
             scrollTrigger: {
@@ -74,6 +74,46 @@ const lenis = new Lenis({
             opacity: 0,
             scale: 0.5,
             duration: 1,
+        });
+        gsap.from("#s2_2", {
+            scrollTrigger: {
+                trigger: "#s2_2",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            duration: 2,
+        });
+        gsap.from("#s2_3", {
+            scrollTrigger: {
+                trigger: "#s2_3",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            duration: 2,
+        });
+        gsap.from("#s2_4", {
+            scrollTrigger: {
+                trigger: "#s2_4",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            duration: 2,
+        });
+        gsap.from("#s2_5", {
+            scrollTrigger: {
+                trigger: "#s2_5",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            duration: 2,
         });
     });
     
