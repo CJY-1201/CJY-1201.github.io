@@ -1,0 +1,8 @@
+#section4 {
+    position: relative;
+    background-image: url(img/imag_9.png);
+    font-size: 3vw;
+    background-size: 1920px 1080px; /* 배경 이미지 크기 설정 */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    background-position: center; /* centers the image */
+  }
