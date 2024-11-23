@@ -52,7 +52,7 @@ const lenis = new Lenis({
                 toggleActions: "play none none reverse",
             },
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
         });
         gsap.from("#s1_3", {
             scrollTrigger: {
@@ -62,7 +62,7 @@ const lenis = new Lenis({
                 toggleActions: "play none none reverse",
             },
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
         });
         gsap.from("#s2_1", {
             scrollTrigger: {
@@ -83,7 +83,7 @@ const lenis = new Lenis({
                 toggleActions: "play none none reverse",
             },
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
         });
         gsap.from("#s2_3", {
             scrollTrigger: {
@@ -93,7 +93,7 @@ const lenis = new Lenis({
                 toggleActions: "play none none reverse",
             },
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
         });
         gsap.from("#s2_4", {
             scrollTrigger: {
@@ -103,7 +103,7 @@ const lenis = new Lenis({
                 toggleActions: "play none none reverse",
             },
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
         });
         gsap.from("#s2_5", {
             scrollTrigger: {
@@ -113,7 +113,75 @@ const lenis = new Lenis({
                 toggleActions: "play none none reverse",
             },
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
+        });
+        gsap.from("#s3_1", {
+            scrollTrigger: {
+                trigger: "#s3_1",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            scale: 0.5,
+            duration: 1,
+        });
+        gsap.from("#s3_2", {
+            scrollTrigger: {
+                trigger: "#s3_2",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            x: -100, 
+            opacity: 0,
+            duration: 1.5,
+        });
+        gsap.from("#s3_3", {
+            scrollTrigger: {
+                trigger: "#s3_3",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            x: 100, 
+            opacity: 0,
+            duration: 1.5,
+        });
+        gsap.from("#s4_1", {
+            scrollTrigger: {
+                trigger: "#s4_1",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 0,
+            scale: 0.5,
+            duration: 1,
+        });
+        gsap.from("#s4_2", {
+            scrollTrigger: {
+                trigger: "#s4_2",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            x: -100,
+            y:  100, // 왼쪽에서 슬라이드 인
+            opacity: 0,
+            duration: 1.5,
+        });
+        gsap.from("#s4_3", {
+            scrollTrigger: {
+                trigger: "#s4_3",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            x: 100,
+            y: 100, // 왼쪽에서 슬라이드 인
+            opacity: 0,
+            duration: 1.5,
         });
     });
     

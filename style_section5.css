@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Han+Sans&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
-#section2 {
+#section5 {
     position: relative;
-    background-image: url(img/img_7.png);
+    background-image: url(img/imag_9.png);
     font-size: 3vw;
     background-size: 1920px 1080px; /* 배경 이미지 크기 설정 */
     background-repeat: no-repeat; /* prevents the image from repeating */
     background-position: center; /* centers the image */
-}
+  }
 
-#s1_1 {
+#s4_1 {
     position: absolute; /* 또는 fixed */
     top: 15%; /* 세로 중앙 */
     left: 50%; /* 가로 중앙 */
@@ -18,23 +16,21 @@
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
     width: 18%;
 }
-
-#s1_2 {
+#s4_2 {
     position: absolute; /* 또는 fixed */
-    top: 40%; /* 세로 중앙 */
-    left: 50%; /* 가로 중앙 */
+    top: 60%; /* 세로 중앙 */
+    left: 25%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
-    width: 75%;
+    width: 35%;
 }
-
-#s1_3 {
+#s4_3 {
     position: absolute; /* 또는 fixed */
-    top: 70%; /* 세로 중앙 */
-    left: 50%; /* 가로 중앙 */
+    top: 60%; /* 세로 중앙 */
+    left: 75%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
-    width: 75%;
+    width: 35%;
 }
