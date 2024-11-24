@@ -274,38 +274,45 @@ const lenis = new Lenis({
     });
 
     document.addEventListener("DOMContentLoaded", function() {
-        // 모달 요소
-        const modal = document.getElementById("myModal");
-        const modalTitle = document.getElementById("modalTitle");
-        const modalDescription = document.getElementById("modalDescription");
-        const span = document.getElementsByClassName("close")[0];
+        // 각 모달 요소를 선택합니다.
+        const modals = {
+            s5_1: document.getElementById("modal1"),
+            s5_2: document.getElementById("modal2"),
+            s5_3: document.getElementById("modal3")
+        };
 
-        // 모든 이미지 버튼에 클릭 이벤트 추가
-        const buttons = document.querySelectorAll('.image-button');
+        // 각 버튼을 선택합니다.
+        const buttons = document.querySelectorAll(".image-button");
+
+        // 버튼 클릭 시 모달을 열고 내용을 설정하는 함수
         buttons.forEach(button => {
-            button.onclick = function() {
-                // 버튼의 데이터 속성에서 제목과 설명 가져오기
-                const title = this.getAttribute('data-title');
-                const description = this.getAttribute('data-description');
+            button.addEventListener("click", function() {
+                const buttonId = this.id;
 
-                // 모달에 제목과 설명 설정
-                modalTitle.textContent = title;
-                modalDescription.textContent = description;
-
-                // 모달 열기
-                modal.style.display = "block";
-            }
+                // 모달을 열고 제목과 내용을 설정합니다.
+                if (modals[buttonId]) {
+                    const modal = modals[buttonId];
+                    const titleElement = modal.querySelector("h2");
+                    const descriptionElement = modal.querySelector("p");
+                    // 모달을 표시합니다.
+                    modal.style.display = "block";
+                }
+            });
         });
 
-        // 닫기 버튼 클릭 시 모달 닫기
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // 모달 외부 클릭 시 모달 닫기
-        window.onclick = function(event) {
-            if (event.target == modal) {
+        // 닫기 버튼 클릭 시 모달을 닫는 이벤트
+        document.querySelectorAll(".close").forEach(closeButton => {
+            closeButton.addEventListener("click", function() {
+                const modalId = this.getAttribute("data-modal");
+                const modal = document.getElementById(modalId);
                 modal.style.display = "none";
+            });
+        });
+
+        // 모달 외부 클릭 시 모달을 닫는 이벤트
+        window.addEventListener("click", function(event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
             }
-        }
+        });
     });
