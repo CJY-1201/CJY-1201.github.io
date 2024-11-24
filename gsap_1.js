@@ -183,5 +183,129 @@ const lenis = new Lenis({
             opacity: 0,
             duration: 1.5,
         });
+        gsap.from("#s5_1", {
+            scrollTrigger: {
+                trigger: "#s5_1",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            x: -100, 
+            opacity: 0,
+            duration: 1.5,
+        });
+        gsap.from("#s5_2", {
+            scrollTrigger: {
+                trigger: "#s5_2",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            x: -100, 
+            opacity: 0,
+            duration: 1.5,
+        });
+        gsap.from("#s5_3", {
+            scrollTrigger: {
+                trigger: "#s5_3",
+                start: "top 80%",
+                end: "top 30%",
+                toggleActions: "play none none reverse",
+            },
+            x: -100, 
+            opacity: 0,
+            duration: 1.5,
+        });
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("s5_1");
     
+        // 마우스 오버 시 애니메이션
+        button.addEventListener("mouseover", () => {
+            gsap.to(button, { scale: 1.1, duration: 0.2 });
+        });
+    
+        // 마우스 아웃 시 원래 크기로 돌아가기
+        button.addEventListener("mouseout", () => {
+            gsap.to(button, { scale: 1, duration: 0.2 });
+        });
+    
+        // 클릭 시 애니메이션
+        button.addEventListener("click", () => {
+            gsap.to(button, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 });
+        });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("s5_2");
+    
+        // 마우스 오버 시 애니메이션
+        button.addEventListener("mouseover", () => {
+            gsap.to(button, { scale: 1.1, duration: 0.2 });
+        });
+    
+        // 마우스 아웃 시 원래 크기로 돌아가기
+        button.addEventListener("mouseout", () => {
+            gsap.to(button, { scale: 1, duration: 0.2 });
+        });
+    
+        // 클릭 시 애니메이션
+        button.addEventListener("click", () => {
+            gsap.to(button, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 });
+        });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("s5_3");
+    
+        // 마우스 오버 시 애니메이션
+        button.addEventListener("mouseover", () => {
+            gsap.to(button, { scale: 1.1, duration: 0.2 });
+        });
+    
+        // 마우스 아웃 시 원래 크기로 돌아가기
+        button.addEventListener("mouseout", () => {
+            gsap.to(button, { scale: 1, duration: 0.2 });
+        });
+    
+        // 클릭 시 애니메이션
+        button.addEventListener("click", () => {
+            gsap.to(button, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 });
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // 모달 요소
+        const modal = document.getElementById("myModal");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+        const span = document.getElementsByClassName("close")[0];
+
+        // 모든 이미지 버튼에 클릭 이벤트 추가
+        const buttons = document.querySelectorAll('.image-button');
+        buttons.forEach(button => {
+            button.onclick = function() {
+                // 버튼의 데이터 속성에서 제목과 설명 가져오기
+                const title = this.getAttribute('data-title');
+                const description = this.getAttribute('data-description');
+
+                // 모달에 제목과 설명 설정
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+
+                // 모달 열기
+                modal.style.display = "block";
+            }
+        });
+
+        // 닫기 버튼 클릭 시 모달 닫기
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // 모달 외부 클릭 시 모달 닫기
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    });
