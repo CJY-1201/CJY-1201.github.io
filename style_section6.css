@@ -55,10 +55,12 @@
     margin: 10% auto; /* 상단 여백을 줄여서 중앙에 더 가깝게 */
     padding: 20px;
     border: 3px solid #ffffff;
-    width: 100%; /* 모달 너비를 90%로 설정 */
-    max-width: 1280px; /* 최대 너비를 800px로 설정 */
+    width: 1280px; /* 너비를 1280px로 설정 */
+    height: 720px; /* 높이를 720px로 설정 */
     border-radius: 5px; /* 모서리 둥글게 */
+    overflow: auto; /* 내용이 넘칠 경우 스크롤 가능 */
 }
+
 /* 닫기 버튼 스타일 */
 .close {
     color: #aaa;
@@ -82,4 +84,14 @@
 .image-button img {
     width: 75%; /* 이미지 크기 조정 */
     height: auto;
+}
+
+#M1_1 {
+    position: absolute; /* 또는 fixed */
+    top: 25%; /* 세로 중앙 */
+    left: 25%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 20%;
 }
