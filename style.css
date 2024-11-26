@@ -10,7 +10,6 @@ body {
   padding: 0;
   height: 2000px; /* 스크롤을 확인하기 위해 높이를 설정 */
   background-color: #121212; /* 어두운 배경 */
-  color: #ffffff; /* 텍스트 색상 */
 }
 
 html {
@@ -38,7 +37,6 @@ h1 {
     align-items: center;
     text-align: center;
     font-size: none;
-    background-color: #f0f0f0; /* 배경색 */
 }
 
 
