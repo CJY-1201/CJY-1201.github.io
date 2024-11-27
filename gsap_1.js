@@ -426,12 +426,15 @@ const lenis = new Lenis({
     
         // 모달 열기
         function openModal(modal) {
-            modal.style.display = "block";
+            modal.style.display = "block"; // 모달을 보이게 설정
+            gsap.fromTo(modal, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.3 }); // 애니메이션 효과
         }
     
         // 모달 닫기
         function closeModal(modal) {
-            modal.style.display = "none";
+            gsap.to(modal, { opacity: 0, scale: 0.8, duration: 0.3, onComplete: () => {
+                modal.style.display = "none"; // 애니메이션이 끝난 후 숨김
+            }});
         }
     
         // 서브 모달 열기
