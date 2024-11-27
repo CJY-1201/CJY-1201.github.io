@@ -1,0 +1,9 @@
+#Map1 {
+    position: absolute; /* 또는 fixed */
+    top: 50%; /* 세로 중앙 */
+    left: 27.5%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    border-radius: 15px;
+}
