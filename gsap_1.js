@@ -280,39 +280,64 @@ const lenis = new Lenis({
             s5_2: document.getElementById("modal2"),
             s5_3: document.getElementById("modal3")
         };
-
+    
         // 각 버튼을 선택합니다.
         const buttons = document.querySelectorAll(".image-button");
-
+    
         // 버튼 클릭 시 모달을 열고 내용을 설정하는 함수
         buttons.forEach(button => {
             button.addEventListener("click", function() {
                 const buttonId = this.id;
-
+    
                 // 모달을 열고 제목과 내용을 설정합니다.
                 if (modals[buttonId]) {
                     const modal = modals[buttonId];
                     const titleElement = modal.querySelector("h2");
                     const descriptionElement = modal.querySelector("p");
+    
                     // 모달을 표시합니다.
                     modal.style.display = "block";
+    
+                    // GSAP 애니메이션으로 모달 열기
+                    gsap.fromTo(modal.querySelector(".modal-content"), 
+                        { opacity: 0, scale: 0.8 }, // 시작 상태
+                        { opacity: 1, scale: 1, duration: 0.5 } // 끝 상태
+                    );
                 }
             });
         });
-
+    
         // 닫기 버튼 클릭 시 모달을 닫는 이벤트
         document.querySelectorAll(".close").forEach(closeButton => {
             closeButton.addEventListener("click", function() {
                 const modalId = this.getAttribute("data-modal");
                 const modal = document.getElementById(modalId);
-                modal.style.display = "none";
+    
+                // GSAP 애니메이션으로 모달 닫기
+                gsap.to(modal.querySelector(".modal-content"), {
+                    opacity: 0,
+                    scale: 0.8,
+                    duration: 0.5,
+                    onComplete: () => {
+                        modal.style.display = "none"; // 애니메이션이 끝난 후 모달 숨김
+                    }
+                });
             });
         });
-
+    
         // 모달 외부 클릭 시 모달을 닫는 이벤트
         window.addEventListener("click", function(event) {
             if (event.target.classList.contains("modal")) {
-                event.target.style.display = "none";
+                const modal = event.target;
+                gsap.to(modal.querySelector(".modal-content"), {
+                    opacity: 0,
+                    scale: 0.8,
+                    duration: 0.5,
+                    onComplete: () => {
+                        modal.style.display = "none"; // 애니메이션이 끝난 후 모달 숨김
+                    }
+                });
             }
         });
     });
+    
