@@ -1,0 +1,80 @@
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+#M1_1 {
+    position: absolute; /* 또는 fixed */
+    top: 30%; /* 세로 중앙 */
+    left: 25%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 45%;
+}
+
+#M1_2 {
+    position: absolute; /* 또는 fixed */
+    top: 70%; /* 세로 중앙 */
+    left: 20%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 25%;
+}
+
+#M1_3 {
+    position: absolute; /* 또는 fixed */
+    top: 70%; /* 세로 중앙 */
+    left: 40%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 25%;
+}
+
+#M1_4 {
+    position: absolute; /* 또는 fixed */
+    top: 70%; /* 세로 중앙 */
+    left: 60%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 25%;
+}
+
+#M1_5 {
+    position: absolute; /* 또는 fixed */
+    top: 70%; /* 세로 중앙 */
+    left: 80%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 25%;
+}
+
+#M1_6 {
+    position: absolute; /* 또는 fixed */
+    top: 29%; /* 세로 중앙 */
+    left: 40%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 12.5%;
+}
+
+
+#modalTitle1 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    top: 17%; /* 세로 중앙 */
+    left: 49%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalDescription1 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-size: 18px;
+    top: 30%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
