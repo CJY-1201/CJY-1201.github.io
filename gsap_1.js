@@ -271,8 +271,81 @@ const lenis = new Lenis({
         button.addEventListener("click", () => {
             gsap.to(button, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 });
         });
+        
     });
-
+    document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("M2_1");
+    
+        // 마우스 오버 시 애니메이션
+        button.addEventListener("mouseover", () => {
+            gsap.to(button, { scale: 1.1, opacity: 1, duration: 0.2 }); // opacity 추가
+        });
+    
+        // 마우스 아웃 시 원래 크기로 돌아가기
+        button.addEventListener("mouseout", () => {
+            gsap.to(button, { scale: 1, opacity: 0.6, duration: 0.2 }); // opacity 원래 값으로
+        });
+    
+        // 클릭 시 애니메이션
+        button.addEventListener("click", () => {
+            gsap.to(button, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 });
+        });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("M2_2");
+    
+        // 마우스 오버 시 애니메이션
+        button.addEventListener("mouseover", () => {
+            gsap.to(button, { scale: 1.1, opacity: 1, duration: 0.2 }); // opacity 추가
+        });
+    
+        // 마우스 아웃 시 원래 크기로 돌아가기
+        button.addEventListener("mouseout", () => {
+            gsap.to(button, { scale: 1, opacity: 0.6, duration: 0.2 }); // opacity 원래 값으로
+        });
+    
+        // 클릭 시 애니메이션
+        button.addEventListener("click", () => {
+            gsap.to(button, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 });
+        });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("M2_3");
+    
+        // 마우스 오버 시 애니메이션
+        button.addEventListener("mouseover", () => {
+            gsap.to(button, { scale: 1.1, opacity: 1, duration: 0.2 }); // opacity 추가
+        });
+    
+        // 마우스 아웃 시 원래 크기로 돌아가기
+        button.addEventListener("mouseout", () => {
+            gsap.to(button, { scale: 1, opacity: 0.6, duration: 0.2 }); // opacity 원래 값으로
+        });
+    
+        // 클릭 시 애니메이션
+        button.addEventListener("click", () => {
+            gsap.to(button, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 });
+        });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("M2_4");
+    
+        // 마우스 오버 시 애니메이션
+        button.addEventListener("mouseover", () => {
+            gsap.to(button, { scale: 1.1, opacity: 1, duration: 0.2 }); // opacity 추가
+        });
+    
+        // 마우스 아웃 시 원래 크기로 돌아가기
+        button.addEventListener("mouseout", () => {
+            gsap.to(button, { scale: 1, opacity: 0.6, duration: 0.2 }); // opacity 원래 값으로
+        });
+    
+        // 클릭 시 애니메이션
+        button.addEventListener("click", () => {
+            gsap.to(button, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 });
+        });
+    });
+    
     document.addEventListener("DOMContentLoaded", function() {
         // 각 모달 요소를 선택합니다.
         const modals = {
@@ -338,6 +411,62 @@ const lenis = new Lenis({
                     }
                 });
             }
+        });
+    });
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        const modal2 = document.getElementById("modal2");
+        const subModals = [
+            document.getElementById("subModal_1"),
+            document.getElementById("subModal_2"),
+            document.getElementById("subModal_3"),
+            document.getElementById("subModal_4")
+        ];
+        const closeButtons = document.querySelectorAll(".close-1");
+    
+        // 모달 열기
+        function openModal(modal) {
+            modal.style.display = "block";
+        }
+    
+        // 모달 닫기
+        function closeModal(modal) {
+            modal.style.display = "none";
+        }
+    
+        // 서브 모달 열기
+        function openSubModal(subModal) {
+            closeModal(modal2);
+            openModal(subModal);
+        }
+    
+        // 서브 모달 닫고 원래 모달 열기
+        function closeSubModalAndOpenMain(subModal) {
+            closeModal(subModal);
+            openModal(modal2);
+        }
+    
+        // 모달 2의 버튼 클릭 시 서브모달 열기
+        document.getElementById("M2_1").addEventListener("click", () => openSubModal(subModals[0]));
+        document.getElementById("M2_2").addEventListener("click", () => openSubModal(subModals[1]));
+        document.getElementById("M2_3").addEventListener("click", () => openSubModal(subModals[2]));
+        document.getElementById("M2_4").addEventListener("click", () => openSubModal(subModals[3]));
+    
+        // 모달 외부 클릭 시 서브 모달 닫고 원래 모달 열기
+        window.addEventListener("click", (event) => {
+            subModals.forEach(subModal => {
+                if (event.target === subModal) {
+                    closeSubModalAndOpenMain(subModal);
+                }
+            });
+        });
+    
+        // 닫기 버튼 클릭 시 모달 닫기
+        closeButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                subModals.forEach(subModal => closeModal(subModal));
+                openModal(modal2); // 원래 모달 열기
+            });
         });
     });
     
