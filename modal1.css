@@ -1,8 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
 #M1_1 {
     position: absolute; /* 또는 fixed */
-    top: 30%; /* 세로 중앙 */
-    left: 25%; /* 가로 중앙 */
+    top: 25%; /* 세로 중앙 */
+    left: 27.5%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
@@ -51,22 +51,31 @@
 
 #M1_6 {
     position: absolute; /* 또는 fixed */
-    top: 29%; /* 세로 중앙 */
-    left: 40%; /* 가로 중앙 */
+    top: 25%; /* 세로 중앙 */
+    left: 42.5%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
     grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
     width: 12.5%;
 }
 
+#M1_7 {
+    position: absolute; /* 또는 fixed */
+    top: 57.5%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 90%;
+}
 
 #modalTitle1 {
     position: absolute;
     font-family: "Galmuri11", sans-serif;
     font-weight: bold;
     font-size: 40px;
-    top: 17%; /* 세로 중앙 */
-    left: 49%; /* 가로 중앙 */
+    top: 12.5%; /* 세로 중앙 */
+    left: 52%; /* 가로 중앙 */
     color:rgb(255, 255, 255)
 }
 
@@ -74,7 +83,47 @@
     position: absolute;
     font-family: "Galmuri11", sans-serif;
     font-size: 18px;
-    top: 30%; /* 세로 중앙 */
-    left: 50%; /* 가로 중앙 */
+    top: 25%; /* 세로 중앙 */
+    left: 53%; /* 가로 중앙 */
+    color:rgb(200, 200, 200)
+}
+
+#modalTitle1_1 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 16.5%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle1_2 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 38%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle1_3 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 56.5%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle1_4 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 76.5%; /* 가로 중앙 */
     color:rgb(255, 255, 255)
 }
