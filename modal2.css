@@ -17,6 +17,7 @@
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
     border-radius: 15px;
     width: 20%;
+    opacity: 70%;
 }
 
 #M2_2 {
@@ -28,6 +29,7 @@
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
     border-radius: 15px;
     width: 20%;
+    opacity: 70%;
 }
 
 #M2_3 {
@@ -39,6 +41,7 @@
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
     border-radius: 15px;
     width: 20%;
+    opacity: 70%;
 }
 
 #M2_4 {
@@ -50,6 +53,7 @@
     grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
     border-radius: 15px;
     width: 20%;
+    opacity: 70%;
 }
 
 #M2_5 {

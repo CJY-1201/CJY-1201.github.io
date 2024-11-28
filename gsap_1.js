@@ -278,7 +278,7 @@ const lenis = new Lenis({
     
         // 마우스 오버 시 애니메이션
         button.addEventListener("mouseover", () => {
-            gsap.to(button, { scale: 1.1, opacity: 1, duration: 0.2 }); // opacity 추가
+            gsap.to(button, { scale: 0.9, opacity: 1, duration: 0.2 }); // opacity 추가
         });
     
         // 마우스 아웃 시 원래 크기로 돌아가기
@@ -296,7 +296,7 @@ const lenis = new Lenis({
     
         // 마우스 오버 시 애니메이션
         button.addEventListener("mouseover", () => {
-            gsap.to(button, { scale: 1.1, opacity: 1, duration: 0.2 }); // opacity 추가
+            gsap.to(button, { scale: 0.9, opacity: 1, duration: 0.2 }); // opacity 추가
         });
     
         // 마우스 아웃 시 원래 크기로 돌아가기
@@ -314,7 +314,7 @@ const lenis = new Lenis({
     
         // 마우스 오버 시 애니메이션
         button.addEventListener("mouseover", () => {
-            gsap.to(button, { scale: 1.1, opacity: 1, duration: 0.2 }); // opacity 추가
+            gsap.to(button, { scale: 0.9, opacity: 1, duration: 0.2 }); // opacity 추가
         });
     
         // 마우스 아웃 시 원래 크기로 돌아가기
@@ -332,7 +332,7 @@ const lenis = new Lenis({
     
         // 마우스 오버 시 애니메이션
         button.addEventListener("mouseover", () => {
-            gsap.to(button, { scale: 1.1, opacity: 1, duration: 0.2 }); // opacity 추가
+            gsap.to(button, { scale: 0.9, opacity: 1, duration: 0.2 }); // opacity 추가
         });
     
         // 마우스 아웃 시 원래 크기로 돌아가기
@@ -351,7 +351,8 @@ const lenis = new Lenis({
         const modals = {
             s5_1: document.getElementById("modal1"),
             s5_2: document.getElementById("modal2"),
-            s5_3: document.getElementById("modal3")
+            s5_3: document.getElementById("modal3"),
+            s5_4: document.getElementById("modal4")
         };
     
         // 각 버튼을 선택합니다.
