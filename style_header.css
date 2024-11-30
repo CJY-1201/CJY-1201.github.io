@@ -23,6 +23,7 @@
     font-weight: 300;
     font-display: swap;
     font-size: 10vw; /* 초기 글꼴 크기 */
+    text-decoration: none; /* 링크의 밑줄 제거 */
     transition: font-size 0.3s ease; /* 부드러운 전환 효과 */
     color: #7D38E4;
 }
