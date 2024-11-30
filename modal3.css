@@ -1,0 +1,199 @@
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+#M3_1 {
+    position: absolute; /* 또는 fixed */
+    top: 35%; /* 세로 중앙 */
+    left: 20%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 25%;
+}
+
+#M3_2 {
+    position: absolute; /* 또는 fixed */
+    top: 75%; /* 세로 중앙 */
+    left: 10%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 15%;
+}
+
+#M3_3 {
+    position: absolute; /* 또는 fixed */
+    top: 75%; /* 세로 중앙 */
+    left: 25%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 15%;
+}
+
+#M3_4 {
+    position: absolute; /* 또는 fixed */
+    top: 75%; /* 세로 중앙 */
+    left: 40%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 15%;
+}
+
+#M3_5 {
+    position: absolute; /* 또는 fixed */
+    top: 35%; /* 세로 중앙 */
+    left: 70%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 25%;
+}
+
+#M3_6 {
+    position: absolute; /* 또는 fixed */
+    top: 75%; /* 세로 중앙 */
+    left: 55%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 15%;
+}
+
+#M3_7 {
+    position: absolute; /* 또는 fixed */
+    top: 75%; /* 세로 중앙 */
+    left: 70%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 15%;
+}
+
+#M3_8 {
+    position: absolute; /* 또는 fixed */
+    top: 75%; /* 세로 중앙 */
+    left: 85%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 15%;
+}
+
+#M3_9 {
+    position: absolute; /* 또는 fixed */
+    top: 50%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 90%;
+}
+#modalTitle3_1 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    top: 5%; /* 세로 중앙 */
+    left: 7.5%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle3_2 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    top: 5%; /* 세로 중앙 */
+    left: 57.5%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle3_3 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 11%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle3_4 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 26%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle3_5 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 41%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle3_6 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 56%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle3_7 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 71%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle3_8 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 86%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#modalTitle3_8 {
+    position: absolute;
+    font-family: "Galmuri11", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    top: 85%; /* 세로 중앙 */
+    left: 86%; /* 가로 중앙 */
+    color:rgb(255, 255, 255)
+}
+
+#M3_10 {
+    position: absolute; /* 또는 fixed */
+    top: 14%; /* 세로 중앙 */
+    left: 4%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 4%;
+}
+
+#M3_11 {
+    position: absolute; /* 또는 fixed */
+    top: 14%; /* 세로 중앙 */
+    left: 54%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 요소의 크기를 고려하여 중앙으로 이동 */
+    grid-column: 1; /* 그리드 열 설정 (필요에 따라 조정) */
+    grid-row: 1; /* 그리드 행 설정 (필요에 따라 조정) */
+    width: 4%;
+}
